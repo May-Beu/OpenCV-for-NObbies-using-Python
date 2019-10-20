@@ -1,0 +1,11 @@
+import cv2
+image=cv2.imread('messi.jpg')
+img1=cv2.pyrDown(image)
+img2=cv2.pyrUp(image)
+cv2.imshow("original",image)
+cv2.waitKey(0)
+cv2.imshow("Pyr down",img1)
+cv2.waitKey(0)
+cv2.imshow("Pyr Up",img2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
